@@ -1,7 +1,6 @@
 <?php
 namespace deflou\components\anchors;
 
-use deflou\interfaces\anchors\IAnchor;
 use deflou\interfaces\anchors\IAnchorService;
 use extas\components\Item;
 use extas\interfaces\repositories\IRepository;
@@ -13,9 +12,6 @@ class AnchorService extends Item implements IAnchorService
 {
     public function createEventAnchor(string $instanceId, string $eventName, int $expiredAt = 0): string
     {
-        /**
-         * @var IAnchor $anchor
-         */
         $anchor = $this->anchors()->create(new Anchor([
             Anchor::FIELD__INSTANCE_ID => $instanceId,
             Anchor::FIELD__EVENT_NAME => $eventName,
@@ -29,9 +25,6 @@ class AnchorService extends Item implements IAnchorService
 
     public function createTriggerAnchor(string $triggerId, int $expiredAt = 0): string
     {
-        /**
-         * @var IAnchor $anchor
-         */
         $anchor = $this->anchors()->create(new Anchor([
             Anchor::FIELD__TRIGGER_ID => $triggerId,
             Anchor::FIELD__EXPIRED_AT => $expiredAt,
@@ -44,9 +37,6 @@ class AnchorService extends Item implements IAnchorService
 
     public function createPersonalAnchor(string $triggerId, string $playerName, int $expiredAt = 0): string
     {
-        /**
-         * @var IAnchor $anchor
-         */
         $anchor = $this->anchors()->create(new Anchor([
             Anchor::FIELD__TRIGGER_ID => $triggerId,
             Anchor::FIELD__PLAYER_NAME => $playerName,
