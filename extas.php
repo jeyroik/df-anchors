@@ -8,7 +8,7 @@ use extas\interfaces\extensions\IExtension;
 use extas\interfaces\plugins\IPlugin;
 
 return [
-    "name" => "jeyroik/df-achors",
+    "name" => "jeyroik/df-anchors",
     "extensions" => [
         [
             IExtension::FIELD__CLASS => ExtensionTriggerAnchor::class,
