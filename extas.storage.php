@@ -3,7 +3,7 @@
 use extas\components\repositories\RepoItem;
 
 return [
-    "name" => "jeyroik/df-triggers",
+    "name" => "jeyroik/df-achors",
     "tables" => [
         "anchors" => [
             "namespace" => "deflou\\repositories",
