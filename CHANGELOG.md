@@ -1,3 +1,7 @@
+# 0.1.4
+
+- Updated `df-triggers` dep version.
+
 # 0.1.3
 
 - Fixed mistype.
