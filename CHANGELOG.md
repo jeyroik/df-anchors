@@ -1,14 +1,18 @@
+# 0.1.7
+
+- Updated `df-triggers` dep version to 4.
+
 # 0.1.6
 
-- Updated `df-triggers` dep version.
+- Updated `df-triggers` dep version to 3.
 
 # 0.1.5
 
-- Updated `df-triggers` dep version.
+- Updated `df-triggers` dep version to 2.
 
 # 0.1.4
 
-- Updated `df-triggers` dep version.
+- Updated `df-triggers` dep version to 1.
 
 # 0.1.3
 
